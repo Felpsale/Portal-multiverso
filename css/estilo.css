@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #956f41;
+}
+
+/* ================= HEADER & MENU ================= */
+.header {
+    position: relative;
+}
+
+.logo { 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo img {
+    height: 220px; 
+}
+
+.container {
+    width: 100%;
+    background: linear-gradient(to right, #956f41, #6b4a2d, #4c3824);
+    padding: 30px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 90px; 
+    color: #fff;
+    font-family: 'Gotham', sans-serif;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    list-style: none;
+}
+
+/* Estilos gerais de links (Menu e Artigo) */
+.menu a, 
+.article a {
+    color: #fff;
+    font-family: "Gotham", sans-serif;
+    font-size: 40px; 
+    text-decoration: none;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+    color: #d8b27c;
+    text-decoration: underline;
+}
+
+
+/* ================= ARTICLE & TEXT ================= */
+.article {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 50px;
+}
+
+.article h2 {
+    color: #fff;
+    font-family: "Gotham", sans-serif;
+    font-size: 50px; 
+    margin-bottom: 20px;
+}
+
+.text {
+    flex: 2;
+}
+
+.text p {
+    color: #fff;
+    font-family: "Gotham", sans-serif;
+    font-size: 30px;
+    line-height: 1.6;  
+    text-align: justify;
+}
+
+/* Links dentro dos parágrafos de texto */
+.text a {
+    color: #d8b27c;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px dashed #d8b27c;
+    transition: color 0.2s ease;
+    font-size: inherit; 
+}
+
+.text a:hover {
+    color: #ffffff;
+    border-bottom-style: solid;
+}
+
+.categoria-tag {
+    color: #d8b27c;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.subtitulo {
+    font-size: 1.3rem !important;
+    font-style: italic;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.meta-noticia {
+    font-size: 0.85rem;
+    color: #ccc;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+/* ================= GALLERY & CARDS ================= */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    flex: 1; 
+    min-width: 450px; 
+}
+
+.card-imagem {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-imagem img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.card-imagem:hover img {
+    transform: scale(1.05); 
+}
+
+/* Configuração base do texto das imagens */
+.card-imagem figcaption {
+    color: #fff;
+    font-family: "Gotham", sans-serif;
+    font-size: 30px;
+    padding: 8px;
+    text-align: center;
+    transition: color 0.3s ease, background-color 0.3s ease; 
+}
+
+/* Adiciona o cursor de clique em qualquer card */
+.card-imagem:hover figcaption {
+    cursor: pointer;
+}
+
+/* ================= Arquivos hover card ================= */
+
+/* O Batman */
+#card-batman:hover figcaption {
+    color: #003366; 
+    background-color: #FFD700; 
+}
+
+
+
+
+/* ================= Arquivos hover card ================= */
+
+/* Coringa*/
+#card-coringa:hover figcaption {
+    color: #79C142; 
+    background-color: #65287A; 
+}
+
+/* Pinguim */
+#card-pinguim:hover figcaption {
+    color: #ADD8E6; 
+    background-color: #111111; 
+}
+
+/* Mulher-Gato */
+#card-mulhergato:hover figcaption {
+    color: #DDA0DD; 
+    background-color: #2b0036; 
+}
+
+/* Duas-Caras */
+#card-duascaras:hover figcaption {
+    color: #ffffff;
+    background-color: #8B0000; 
+}
+
+/* Espantalho */
+#card-espantalho:hover figcaption {
+    color: #FFA500; 
+    background-color: #3b2313; 
+}
+
+/* Charada */
+#card-charada:hover figcaption {
+    color: #00FF00; 
+    background-color: #003300; 
+}
+
