@@ -165,6 +165,7 @@ body {
     border: 3px solid var(--cor-linhas); 
     border-radius: 4px; 
     overflow: hidden;
+    
 }
 
 .card-imagem img {
@@ -245,3 +246,7 @@ a#card-mulhergato:hover { color: #DDA0DD; background-color: #2b0036; border-colo
 a#card-duascaras:hover { color: #ffffff; background-color: #8B0000; border-color: #ffffff; }
 a#card-espantalho:hover { color: #FFA500; background-color: #3b2313; border-color: #FFA500; }
 a#card-charada:hover { color: #00FF00; background-color: #003300; border-color: #00FF00; }
+
+
+
+
